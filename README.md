@@ -11,6 +11,6 @@ The dragon can create small creature everu certain seconds, and the creature van
 <img src="https://github.com/RyunosukeIchiyasu/Bomber_man/blob/master/pics%20for%20readme/2.jpg" width="600">
 
 ## Unimplemented function
-#1: Reduce layer's and dragon's life
-#2: Other item (recover life, enhance bomb, etc)
+#1: Reduce layer's and dragon's life  
+#2: Other item (recover life, enhance bomb, etc)  
 #3: Display game state (Score, Dragon's life, etc)
