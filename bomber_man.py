@@ -320,16 +320,16 @@ def HitCheck():
                 dragon.life -= 1
                 flame.hit = 1
                 print('dragon life = ' + str(dragon.life))
-            for i in range(5):
-                for index, scorpion in enumerate(all_scorpion):
-                    if (abs(flame.position_x[i] - scorpion.position_x) < 50) and (abs(flame.position_y[i] - scorpion.position_y) < 50):
-                        print('Hit Scorpion')
-                        scorpion.life -= 1
-                        new_text = Text(scorpion.position_x, scorpion.position_y)
-                        all_text.append(new_text)
-                        print('scorpion life = ' + str(scorpion.life))
-                        if scorpion.life == 0:
-                            del all_scorpion[index]
+        for i in range(5):
+            for index, scorpion in enumerate(all_scorpion):
+                if (abs(flame.position_x[i] - scorpion.position_x) < 50) and (abs(flame.position_y[i] - scorpion.position_y) < 50):
+                    print('Hit Scorpion')
+                    scorpion.life -= 1
+                    new_text = Text(scorpion.position_x, scorpion.position_y)
+                    all_text.append(new_text)
+                    print('scorpion life = ' + str(scorpion.life))
+                    if scorpion.life == 0:
+                        del all_scorpion[index]
 
 def DragonAttack():
     attack = dragon.Attack()
